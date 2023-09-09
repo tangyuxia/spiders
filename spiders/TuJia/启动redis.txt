@@ -1,0 +1,12 @@
+1. win+r cmd 进入黑色的终端，输入下面的命令
+redis-cli
+2. 测试下面命令redis是否正常，如果回复pong则表明正常
+ping
+3.跳转的1号数据库，因为是配置的1号数据库
+select 1
+4.如果有数据则清空数据
+flushdb
+5. 查询是否清空
+keys *
+6.初始化url
+lpush scrapy_redis:start_urls "https://m.tujia.com/"
